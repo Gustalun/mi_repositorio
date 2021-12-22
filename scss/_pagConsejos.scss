@@ -1,0 +1,16 @@
+/* pagina de consejos */
+
+.PagConsejo {
+    display: grid;
+    background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);
+    grid-template-areas: ". consejo consejo ."
+    ". consejo consejo ."
+    ". consejo consejo .";
+}
+.consejo {
+    grid-area: consejo;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+}

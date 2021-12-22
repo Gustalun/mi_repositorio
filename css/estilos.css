@@ -1,0 +1,289 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500&display=swap");
+header {
+  background-color: #f1f1d1;
+  width: 100%;
+  height: 6.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky; }
+
+/* barra de navegacion */
+.botonera {
+  margin-right: 1.25rem; }
+
+.botonera ul li {
+  display: inline-block;
+  margin-left: 1.25rem; }
+
+.botonera ul li a {
+  text-decoration: none;
+  color: blueviolet;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.tamañoLogo {
+  width: 8rem;
+  height: 6rem; }
+
+/* Contenido de la pagina */
+.tamañoImagen {
+  width: 35.5cm;
+  height: 18cm; }
+
+.pag1H1 {
+  margin-top: 3.75rem;
+  text-align: center;
+  font-size: 3rem; }
+
+.posicionTexto {
+  text-align: center;
+  margin: 3.125rem 7.5rem;
+  padding: 0.625rem 7.5rem;
+  font-size: 1.8rem; }
+
+span {
+  display: block;
+  margin-top: 4.375rem; }
+
+/* cajas tipo cards con informacion de tratamientos */
+.tarjeta__informativa {
+  display: flex;
+  background: #f7e8d7;
+  flex-direction: row;
+  padding: 3.125rem;
+  margin: 0 auto;
+  justify-content: space-between; }
+
+.tarjeta__producto {
+  border: 1px solid violet;
+  color: black;
+  background-color: white;
+  width: 20rem;
+  height: 20rem;
+  text-align: center;
+  margin: auto;
+  background: url(../multimedia/fotocajas.jpg);
+  background-size: cover;
+  padding: 1.25rem; }
+
+.tarjeta__piel {
+  border: 1px solid violet;
+  color: black;
+  background-color: white;
+  width: 20rem;
+  height: 20rem;
+  text-align: center;
+  margin: 1.25rem;
+  background: url(../multimedia/fotocajas.jpg);
+  background-size: cover;
+  padding: 1.25rem; }
+
+.tarjeta__confianza {
+  border: 1px solid violet;
+  color: black;
+  background-color: white;
+  width: 20rem;
+  height: 20rem;
+  text-align: center;
+  margin: 1.25rem;
+  background: url(../multimedia/fotocajas.jpg);
+  background-size: cover;
+  padding: 1.25rem; }
+
+h2 {
+  margin-top: 6.25rem;
+  font-size: 2rem;
+  margin-bottom: 4rem;
+  max-width: 100%; }
+
+.containerPadre {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 1.5rem; }
+
+.containerPadre p {
+  font-size: 1.5rem;
+  width: 30rem; }
+
+.containerPadre img {
+  width: 22rem;
+  height: 22rem;
+  border-radius: 999px; }
+
+.containerPadreInf {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  background-color: #eeeed3; }
+
+.containerPadreInf p {
+  font-size: 1.5rem;
+  width: 30rem; }
+
+.containerPadreInf img {
+  width: 22rem;
+  height: 22rem;
+  border-radius: 999px; }
+
+/* boton que lleva a turnos disponibles */
+.turnero {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.turnero a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  border: 1px solid #cac5c5;
+  padding: 1rem 1.5rem;
+  background-color: blanchedalmond;
+  border-radius: 9px;
+  color: cornflowerblue; }
+
+/* mobile first */
+@media only screen and (max-width: 770px) {
+  .flex-container {
+    flex-direction: column; }
+  .containerPadre {
+    flex-direction: column-reverse;
+    width: 100vw; }
+  .containerPadreInf {
+    flex-direction: column-reverse;
+    width: 100vw; }
+  .tamañoImagen {
+    display: none; }
+  body {
+    overflow-x: hidden;
+    margin: 0; } }
+
+/* aca va el footer */
+.footer__contenedor {
+  display: flex;
+  margin: 0 auto;
+  padding: 0.15rem;
+  justify-content: space-evenly;
+  background-color: #bbb1bb; }
+
+.footer__contactos {
+  padding: 0.625rem;
+  width: 9.375rem;
+  height: 9.375rem;
+  text-align: center;
+  margin: 1rem; }
+
+.footer__instagram {
+  padding: 0.625rem;
+  width: 9.375rem;
+  height: 9.375rem;
+  text-align: center;
+  margin: 1rem; }
+
+.footer__conoceme {
+  padding: 0.625rem;
+  width: 9.375rem;
+  height: 9.375rem;
+  text-align: center;
+  margin: 1rem; }
+
+.footer__mapa {
+  margin-top: 2rem;
+  height: 15rem;
+  width: 18rem;
+  align-items: stretch; }
+
+@media (max-width: 900px) and (min-width: 400px) {
+  .footer__contenedor {
+    display: flex;
+    flex-direction: column;
+    padding: 0.25rem; } }
+
+/* pagina de tratamientos */
+.contenedor3 {
+  display: flex;
+  background-color: aliceblue;
+  margin: 0 auto;
+  padding: 6.25rem;
+  justify-content: space-between;
+  background-image: url(../multimedia/fotocajas.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.caja3 {
+  border: 1px solid violet;
+  padding: 0.625rem;
+  width: 8.25rem;
+  height: 8.25rem;
+  line-height: 8.25rem;
+  text-align: center;
+  margin: 0.938rem;
+  background-color: beige;
+  border-radius: 1.25rem; }
+
+/* pagina de productos */
+.contenedor {
+  display: grid;
+  background-color: #e6e6d2;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 5rem 100%;
+  grid-template-areas: "secciones secciones secciones" "galeria galeria galeria";
+  margin-bottom: 3rem; }
+
+.secciones {
+  grid-area: secciones;
+  text-align: center;
+  color: rgba(137, 43, 226, 0.986); }
+
+.galeria {
+  grid-area: galeria; }
+
+.categorias {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%; }
+
+.galeriaContenido {
+  display: flex;
+  margin: 4rem;
+  justify-content: start;
+  align-items: center; }
+
+.galeriaContenido img {
+  width: 10rem;
+  height: 10rem;
+  margin-right: 3rem; }
+
+/* pagina de consejos */
+.PagConsejo {
+  display: grid;
+  background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);
+  grid-template-areas: ". consejo consejo ." ". consejo consejo ." ". consejo consejo ."; }
+
+.consejo {
+  grid-area: consejo;
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 2rem;
+  font-weight: bold; }
+
+/* pagina de contacto */
+.subtitulo {
+  color: violet; }
+
+body {
+  background-color: beige;
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif; }
+
+/* agregando animaciones a algunas secciones */
+.animate__rubberBand {
+  animation-delay: 3s;
+  color: #BC8CF2; }
+
+.turnosGradientes {
+  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%); }
+
+h1 {
+  text-align: center; }

@@ -1,0 +1,53 @@
+/* aca va el footer */
+.footer__contenedor {
+    display: flex;
+    margin: 0 auto;
+    padding: 0.15rem;
+    justify-content: flex-start;
+    background-color: rgb(199, 122, 199);
+}
+
+.footer__contactos {
+    padding: 0.625rem;
+    width: 3.75rem;
+    height: 3.75rem;
+    margin: 1rem;
+}
+.footer__instagram {
+    
+    padding: 0.625rem;
+    width: 1.75rem;
+    height: 1.75rem;
+    margin: 1rem;
+}
+.footer__conoceme {
+    
+    padding: 0.625rem;
+    width: 1.75rem;
+    height: 1.75rem;
+    margin: 1rem;
+}
+.footer__mapa {
+    margin-top: 0.625rem;
+    height: 5rem;
+    width: 7rem;
+    
+}
+
+@media only screen and (max-width: 800px) {
+    .footer__contenedor {
+        display: flex;
+        flex-direction: row;
+        padding: 0.25rem;
+    }
+    .footer__mapa {
+        display: none;
+        flex-direction: row;
+    }
+    .footer__instagram {
+        flex-direction: row;
+    }
+    .footer__conoceme {
+        flex-direction: row;
+    }
+}

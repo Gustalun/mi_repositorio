@@ -1,0 +1,136 @@
+/* Contenido de la pagina */
+
+.tamañoImagen {
+    width: 35.5cm;
+    height: 18cm;
+}
+.pag1H1{
+    margin-top: 3.75rem;
+    text-align: center;
+    font-size: 3rem;
+}
+.posicionTexto {
+    text-align: center;
+    margin: 3.125rem 7.5rem;
+    padding: 0.625rem 7.5rem;
+    font-size: 1.8rem;
+}
+span { 
+    display: block;
+    margin-top: 4.375rem;
+}
+
+/* cajas tipo cards con informacion de tratamientos */
+.tarjeta__informativa {
+    display: flex;
+    background: rgb(247, 232, 215);
+    flex-direction: row;
+    padding: 3.125rem;
+    
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.tarjeta__producto {
+    border: 1px solid violet;
+    color: black;
+    background-color: white;
+    width: 20rem;
+    height: 20rem;
+    text-align: center;
+    margin: auto;
+    background: url(../multimedia/fotocajas.jpg);
+    background-size: cover;
+    padding: 1.25rem;
+}
+.tarjeta__piel {
+    border: 1px solid violet;
+    color: black;
+    background-color: white;
+    width: 20rem;
+    height: 20rem;
+    text-align: center;
+    margin: 1.25rem;
+    background: url(../multimedia/fotocajas.jpg);
+    background-size: cover;
+    padding: 1.25rem;
+}
+.tarjeta__confianza {
+    border: 1px solid violet;
+    color: black;
+    background-color: white;
+    width: 20rem;
+    height: 20rem;
+    text-align: center;
+    margin: 1.25rem;
+    background: url(../multimedia/fotocajas.jpg);
+    background-size: cover;
+    padding: 1.25rem;
+}
+
+
+.containerPadre {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1.5rem;
+}
+.containerPadre p {
+    font-size: 1.5rem;
+    width: 30rem;
+}
+.containerPadre img {
+    width: 22rem;
+    height: 22rem;
+    border-radius: 999px;
+}
+.containerPadreInf {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    background-color: rgb(238, 238, 211);
+}
+.containerPadreInf p {
+    font-size: 1.5rem;
+    width: 30rem;
+}
+.containerPadreInf img {
+    width: 22rem;
+    height: 22rem;
+    border-radius: 999px;
+}
+/* boton que lleva a turnos disponibles */
+.turnero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.turnero a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    border: 1px solid rgb(202, 197, 197);
+    padding: 1rem 1.5rem;
+    background-color: blanchedalmond;
+    border-radius: 9px;
+    color: cornflowerblue;
+}
+/* mobile first */
+
+@media only screen and (max-width: 770px) {
+    .flex-container {
+        flex-direction: column;
+    }
+    .containerPadre {
+        flex-direction: column-reverse;
+        width: 100vw;
+    }
+    .containerPadreInf {
+        flex-direction: column-reverse;
+        width: 100vw;
+    }
+    .tamañoImagen {
+        display: none;
+    }
+    body {
+        overflow-x: hidden;
+        margin: 0;
+    }
+}

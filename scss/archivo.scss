@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500&display=swap');
+@import "header";
+@import "paginaPrincipal";
+@import "footer";
+@import "paginaTratamientos";
+@import "paginaProductos";
+@import "pagConsejos";
+@import "pagContacto";
+
+
+body {
+    background-color: beige;
+    overflow-x: hidden;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+/* agregando animaciones a algunas secciones */
+
+.animate__rubberBand {
+    animation-delay: 3s;
+    color: #BC8CF2;
+}
+
+.turnosGradientes {
+    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+}
+
+$title-font: 1.5rem;
+$border-botton: 1px solid gray;
+
+
+h1 {
+    text-align: center;
+}
+
