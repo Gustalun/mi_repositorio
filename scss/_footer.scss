@@ -2,7 +2,7 @@
 .footer__contenedor {
     display: flex;
     margin: 0 auto;
-    padding: 0.15rem;
+    padding: 1rem;
     justify-content: flex-start;
     background-color: rgb(199, 122, 199);
 }
@@ -29,25 +29,9 @@
 }
 .footer__mapa {
     margin-top: 0.625rem;
-    height: 5rem;
-    width: 7rem;
+    height: 3rem;
+    width: 4rem;
     
 }
 
-@media only screen and (max-width: 800px) {
-    .footer__contenedor {
-        display: flex;
-        flex-direction: row;
-        padding: 0.25rem;
-    }
-    .footer__mapa {
-        display: none;
-        flex-direction: row;
-    }
-    .footer__instagram {
-        flex-direction: row;
-    }
-    .footer__conoceme {
-        flex-direction: row;
-    }
-}
+

@@ -7,7 +7,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky; }
+  position: sticky;
+  z-index: 0;
+}
 
 /* barra de navegacion */
 .botonera {
@@ -35,7 +37,9 @@ header {
 .pag1H1 {
   margin-top: 3.75rem;
   text-align: center;
-  font-size: 3rem; }
+  font-size: 3rem;
+  color: #BC8CF2;
+}
 
 .posicionTexto {
   text-align: center;
@@ -91,6 +95,12 @@ span {
   background: url(../multimedia/fotocajas.jpg);
   background-size: cover;
   padding: 1.25rem; }
+
+  @media (max-width: 800px) and (min-width: 400px) {
+    .tarjeta__informativa {
+      flex-direction: column;
+    }
+  }
 
 h2 {
   margin-top: 6.25rem;
@@ -156,7 +166,7 @@ h2 {
     display: none; }
   body {
     overflow-x: hidden;
-    margin: 0; } }
+    margin: 1rem; } }
 
 /* aca va el footer */
 .footer__contenedor {
@@ -164,40 +174,70 @@ h2 {
   margin: 0 auto;
   padding: 0.15rem;
   justify-content: space-evenly;
-  background-color: #bbb1bb; }
+  background-color: #bbb1bb; 
+  position: relative;
+}
 
 .footer__contactos {
   padding: 0.625rem;
   width: 9.375rem;
   height: 9.375rem;
   text-align: center;
-  margin: 1rem; }
+  margin: 1rem;
+}
 
 .footer__instagram {
   padding: 0.625rem;
   width: 9.375rem;
   height: 9.375rem;
   text-align: center;
-  margin: 1rem; }
+  margin: 1rem; 
+}
 
 .footer__conoceme {
   padding: 0.625rem;
   width: 9.375rem;
   height: 9.375rem;
   text-align: center;
-  margin: 1rem; }
+  margin: 1rem; 
+}
 
 .footer__mapa {
-  margin-top: 2rem;
-  height: 15rem;
-  width: 18rem;
-  align-items: stretch; }
+  margin-top: 0.3rem;
+  height: 12rem;
+  width: 15rem;
+  align-items: stretch;
+  
+}
 
-@media (max-width: 900px) and (min-width: 400px) {
+@media (max-width: 800px) and (min-width: 400px) {
   .footer__contenedor {
     display: flex;
-    flex-direction: column;
-    padding: 0.25rem; } }
+    flex-direction: row;
+    padding: 0.25rem; } 
+  
+  .footer__mapa {
+    margin-top: 0.5rem;
+    height: 1rem;
+    width: 1rem;
+    align-items: center;
+    size-adjust: 3rem;
+    display: none;
+  }
+  .footer__conoceme {
+    font-size: 0.5rem;
+    text-align: start;
+  }
+  .footer__contactos {
+    font-size: 1rem;
+    text-align: start;
+    padding: 0.5rem;
+  }
+  .footer__instagram {
+    font-size: 0.5rem;
+    text-align: start;
+  }
+  }
 
 /* pagina de tratamientos */
 .contenedor3 {
@@ -227,8 +267,11 @@ h2 {
   background-color: #e6e6d2;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 5rem 100%;
-  grid-template-areas: "secciones secciones secciones" "galeria galeria galeria";
-  margin-bottom: 3rem; }
+  grid-template-areas: "secciones secciones secciones"
+ "galeria galeria galeria";
+  margin-bottom: 3rem; 
+  margin-top: 1.5rem;
+}
 
 .secciones {
   grid-area: secciones;
@@ -258,8 +301,13 @@ h2 {
 /* pagina de consejos */
 .PagConsejo {
   display: grid;
-  background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);
-  grid-template-areas: ". consejo consejo ." ". consejo consejo ." ". consejo consejo ."; }
+  background-color: #e9cdf5;
+  grid-template-areas: ". consejo consejo ."
+ ". consejo consejo ."
+ ". consejo consejo ."; 
+ margin-bottom: 1rem;
+ padding: 0.8rem;
+}
 
 .consejo {
   grid-area: consejo;
@@ -287,3 +335,30 @@ body {
 
 h1 {
   text-align: center; }
+
+
+.cartaDer {
+    padding: 0.5rem 0.5rem;
+    margin: 0.3rem 0.3rem;
+}
+
+.text {
+  padding: 0.3rem 0.3rem;
+  margin: 0.3rem 0.3rem;
+}
+
+.tituloH1 {
+  padding: 0.5rem 0.5rem;
+  margin: 2.5rem 2.5rem 4rem;
+
+}
+
+.carta {
+  position: static !important;
+}
+
+.active {
+  color: #8f4adf !important;
+}
+
+
